@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.gmuni.sc">
+
+    <!-- 　允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 后台自动授予的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 获取读写SD卡的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5ba2f655b465f501d20000f9" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="6c1a43e9abb86d5fa68f0230eced8432" />
+        <!-- Channel ID用来标识App的推广渠道，作为推送消息时给用户分组的一个维度。 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="gmunidata" />
+
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.start.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.schoolcard.SchoolCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.schedule.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.schedule.SemesterSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lost.LostFoundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.pay.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lost.LostFoundPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lost.LostFoundDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lost.LostFoundMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.BaseWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.ReturnedWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.CetScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.PutonghuaScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.PutonghuaScoreResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.ComputerGradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.ComputerGradeSelectTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.ComputerGradeSelectSubjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.ComputerGradeScoreResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.score.CetScoreResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.MeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.setting.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.SignIn.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.express.ExpressQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.express.ExpressCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.express.ExpressResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.personal_details.PersionalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.express.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.BaseClipImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.StudentRollActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.scan.CaptureScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.scan.ScanDefaultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.setting.SafetyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.message.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.message.MessageNoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.message.MessageIntFeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.more.gprs.GprsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.schoolbus.SchoolBusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.schoolbus.SchoolBusDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

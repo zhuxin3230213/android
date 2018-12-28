@@ -1,0 +1,142 @@
+//apply plugin: 'com.android.library'
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'org.greenrobot.greendao'
+
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cn.gmuni.sc"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+        splits {
+            abi {
+                enable true
+                reset()
+                include 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+                universalApk true
+            }
+        }
+//        ndk{
+//            abiFilters'armeabi','armeabi-v7a','armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /*greendao 配置项*/
+    greendao {
+        //数据库schema版本，也可以理解为数据库版本号 在系统升级时，如果表结构有变化， 则可以将此版本号增加一位，则会自动将表变化更新
+        schemaVersion 10
+        //设置DaoMaster 、DasoSession 、Dao包名
+        daoPackage 'cn.gmuni.sc.greendao.db'
+        //设置DaoMaster 、DaoSession、Dao目录
+        targetGenDir 'src/main/java'
+    }
+    buildToolsVersion '27.0.3'
+
+    signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:gridlayout-v7:28.0.0-beta01'
+    implementation 'com.android.support:appcompat-v7:28.0.0-beta01'
+    implementation 'com.android.support:support-v4:28.0.0-beta01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //谷歌推出的material design库
+    implementation 'com.android.support:design:28.0.0-beta01'
+    //Json转换神器
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //ButterKnife是一个专注于Android系统的View注入框架,以前总是要写很多findViewById来找到View对象，有了ButterKnife可以很轻松的省去这些步骤
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    //一款用于处理android 用户授权的插件,使用注解动态向用户获取权限
+    implementation('com.github.hotchemi:permissionsdispatcher:3.2.0') {
+        //exclude group:表示只要包含com.android.support的都排除 否则会报包冲突的问题
+        exclude group: 'com.android.support'
+    }
+    //日志
+    implementation 'com.orhanobut:logger:2.2.0'
+    //图片加载库，用于加载图片并可进行图片缓存   基于glide的优秀库 glide-transformations
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //sqlite操作
+    implementation 'org.greenrobot:greendao:3.2.0'
+    //辅助greenDao 数据库升级帮助类
+    implementation 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.1.0'
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.9'
+    //网络请求
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'io.reactivex:rxjava:1.2.1'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    //工具类
+    implementation 'cn.finalteam:toolsfinal:1.1.5'
+
+    //动态权限申请
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    //友盟推送
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    api 'com.umeng.sdk:common:1.5.3'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    api 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    api 'com.umeng.sdk:push:4.2.0'
+
+    //扫码
+    implementation 'com.google.zxing:core:3.3.0'
+
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.3.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

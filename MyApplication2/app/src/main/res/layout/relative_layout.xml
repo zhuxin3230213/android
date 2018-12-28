@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 定义该组件位于父容器左上侧 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="容器左上侧" />
+
+    <!-- 定义该组件位于父容器上侧水平居中 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="容器上侧水平居中" />
+
+    <!-- 定义该组件位于父容器右上侧 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="容器右上侧" />
+    <!-- 定义该组件位于父容器左侧垂直居中 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="左中" />
+
+    <!-- 定义该组件位于父容器右侧垂直居中 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="右中" />
+    <!-- 定义该组件位于父容器左下侧 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="容器左下侧" />
+    <!-- 定义该组件位于父容器下侧水平居中 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="容器下侧水平居中" />
+    <!-- 定义该组件位于父容器右下侧 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="容器右下侧" />
+
+
+    <!-- 定义该组件位于父容器中间 -->
+
+    <Button
+        android:id="@+id/center_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="容器中央" />
+
+    <!-- 定义该组件位于center_btn组件的上方 -->
+
+    <Button
+        android:id="@+id/center_top_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_btn"
+        android:layout_alignLeft="@id/center_btn"
+        android:text="中上" />
+
+    <!-- 定义该组件位于center_btn组件的下方 -->
+
+    <Button
+        android:id="@+id/center_bottom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/center_btn"
+        android:layout_below="@id/center_btn"
+        android:text="中下" />
+
+    <!-- 定义该组件位于center_btn组件的左边 -->
+
+    <Button
+        android:id="@+id/center_bottom_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center_bottom_btn"
+        android:layout_toLeftOf="@id/center_btn"
+        android:text="中下左" />
+
+    <!-- 定义该组件位于center_btn组件的右边 -->
+    <Button
+        android:id="@+id/center_top_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center_top_btn"
+        android:layout_toRightOf="@id/center_btn"
+        android:text="中上右" />
+</RelativeLayout>
+
+

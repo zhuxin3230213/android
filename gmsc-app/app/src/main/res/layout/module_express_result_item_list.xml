@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNormalBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/module_express_result_item_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/module_express_result_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="23: 39"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/module_express_result_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/module_express_result_item_time"
+                    android:singleLine="true"
+                    android:text="2018-09-19"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_tiny" />
+
+                <TextView
+                    android:id="@+id/module_express_result_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/module_express_result_item_date"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:text="已签收:您已在西安东尚观湖北门一店完成取件，感谢使用菜鸟驿站，期待再次为您服务。"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_normal" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/module_express_result_item_divider"
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/module_express_result_item_top"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:id="@+id/module_express_result_item_divider_line"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:background="@color/fontColorMinistrant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNormalBackground"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_no_exist"
+                android:text="抱歉，没有查到物流信息"
+                android:textColor="@color/news_image_bg"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="8dp"
+                android:text="可能原因:"
+                android:textColor="@color/orange_yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8dp"
+                android:text="1.你的快递刚刚寄出\n2.你输入的运单号或选择的快递公司有误"
+                android:textColor="@color/news_image_bg" />
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

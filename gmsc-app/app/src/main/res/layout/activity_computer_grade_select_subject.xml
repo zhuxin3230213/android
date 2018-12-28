@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.score.ComputerGradeSelectSubjectActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/score_computer_select_subject_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/score_select_e_sub"
+            app:action_title="@string/ok"
+            ></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:tag="loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" android:background="@color/colorNormalBackground">
+        <cn.gmuni.sc.widget.listview.radiolistview.CustomRadioListView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorPrimaryBackground"
+            android:dividerHeight="1dp"
+            android:id="@+id/cumputer_grade_select_subject_listview"></cn.gmuni.sc.widget.listview.radiolistview.CustomRadioListView>
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

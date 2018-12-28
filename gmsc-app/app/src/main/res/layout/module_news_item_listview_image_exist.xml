@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/module_news_item_listview_image_exist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNormalBackground">
+
+
+    <RelativeLayout
+        android:id="@+id/module_news_item_listview_image_exist_more_row_and_one_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/module_news_item_listview_image_exist_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/module_news_item_listview_image_exist_image"
+            android:ellipsize="end"
+            android:lineSpacingExtra="10dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="新闻内容"
+            android:textColor="@color/fontColorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/module_news_item_listview_image_exist_newspaper_name"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/module_news_item_listview_image_exist_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/news_textview_border"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="报社名称"
+            android:textColor="@color/fontColorWhite"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:id="@+id/module_news_item_listview_image_exist_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/module_news_item_listview_image_exist_newspaper_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/module_news_item_listview_image_exist_newspaper_name"
+            android:text="2015-05-04"
+            android:textColor="@color/fontColorMinor"
+            android:textSize="@dimen/font_smaller" />
+
+        <cn.gmuni.sc.widget.CustomImageView
+            android:id="@+id/module_news_item_listview_image_exist_image"
+            android:layout_width="110dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_gray_square_bg"
+            android:src="@drawable/icon_news" />
+    </RelativeLayout>
+
+</RelativeLayout>

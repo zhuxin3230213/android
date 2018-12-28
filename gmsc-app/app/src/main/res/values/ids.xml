@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--首页所有节点的id-->
+    <item name="home_cell_card" type="id">home_cell_card</item>
+    <item name="home_cell_tuition_fees" type="id">home_cell_tuition_fees</item>
+    <item name="home_cell_schedule" type="id">home_cell_schedule</item>
+    <item name="home_cell_score" type="id">home_cell_score</item>
+    <item name="home_cell_pay" type="id">home_cell_pay</item>
+    <item name="home_cell_news" type="id">home_cell_news</item>
+    <item name="home_cell_car" type="id">home_cell_car</item>
+    <item name="home_cell_more" type="id">home_cell_more</item>
+    <item name="home_wrap_firstline" type="id">home_wrap_firstline</item>
+    <item name="home_cell_lost_found" type="id">home_cell_lost_found</item>
+
+
+    <item name="home_train_booking" type="id">home_train_booking</item>
+    <item name="home_express_query" type="id">home_express_query</item>
+    <item name="lost_found_list_item_content_snapshot" type="id">lost_found_list_item_content_snapshot</item>
+    <!-- express IDs -->
+    <item name="auto_focus" type="id" />
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="quit" type="id" />
+</resources>

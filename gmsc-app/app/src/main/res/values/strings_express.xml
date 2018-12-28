@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--快递查询-->
+    <string name="express_my_post">我的快递</string>
+    <string name="express_import">导入</string>
+    <string name="express_photo_album">相册</string>
+    <string name="express_query_post">查快递</string>
+    <string name="express_query_edit">输入或扫一扫快递单号</string>
+    <string name="express_query_history_title">以下是历史查询订单</string>
+    <string name="express_query_no_history">您暂时没有查询过订单哦~</string>
+    <string name="express_query_choose_other_company">选择其他快递公司</string>
+    <string name="express_company_choose">选择快递公司</string>
+    <string name="express_company_search">搜索</string>
+    <string name="express_company_common_use">常用快递</string>
+    <string name="express_result_detail">物流详情</string>
+    <string name="express_result_copyright">本数据由快递鸟提供></string>
+    <string name="express_result_copyright_one">本数据由快递100提供></string>
+    <string name="express_capture_scan">扫一扫</string>
+    <string name="express_capture_tips">温馨提示</string>
+    <string name="express_capture_analyze_fail">抱歉，未在图中发现条码！</string>
+    <string name="express_capture_sure">确定</string>
+    <string name="express_capture_cancel">取消</string>
+    <string name="express_result_empty_tip">1.你的快递刚刚寄出\n2.你输入的运单号或选择的快递公司有误</string>
+    <string name="express_result_no_data">没有查询到物流信息~</string>
+</resources>

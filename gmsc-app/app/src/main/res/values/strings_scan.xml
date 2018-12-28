@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan_default_title">扫描结果</string>
+    <string name="scan_default_tip">已识别到二维码内容</string>
+    <string name="scan_default_copy_content">复制内容</string>
+</resources>

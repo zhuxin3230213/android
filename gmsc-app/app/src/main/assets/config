@@ -1,0 +1,4 @@
+#server.url=https://chenh.gmunidata.com:8443
+server.url = https://192.168.3.198:8443
+#ssl模式，dev 开发模式 prod 生产模式
+ssl.mode = dev

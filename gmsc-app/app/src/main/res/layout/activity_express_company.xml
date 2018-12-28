@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.more.express.ExpressCompanyActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/express_company_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/express_company_choose"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:tag="loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBackground">
+
+            <include layout="@layout/activity_express_company_include"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

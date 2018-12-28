@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.me.setting.AboutUsActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/me_about_us_back_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/me_about"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:tag="loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

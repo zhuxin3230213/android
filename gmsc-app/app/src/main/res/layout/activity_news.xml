@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.news.NewsActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/news_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/home_news"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="loadingLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBackground">
+
+            <cn.gmuni.sc.widget.CustomEmptyDataView
+                android:id="@+id/news_list_view_no_data_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:empty_image="@drawable/icon_404"
+                app:empty_text="@string/home_news_empty">
+
+            </cn.gmuni.sc.widget.CustomEmptyDataView>
+
+            <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                android:id="@+id/news_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

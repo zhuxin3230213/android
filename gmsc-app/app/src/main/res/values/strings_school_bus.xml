@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="school_bus_title">校车查询</string>
+    <string name="school_bus_time">校车时间表</string>
+    <string name="school_bus_summer">夏季</string>
+    <string name="school_bus_winter">冬季</string>
+    <string name="school_bus_summer_empty">暂无夏季校车信息~</string>
+    <string name="school_bus_winter_empty">暂无冬季校车信息~</string>
+    <string name="school_bus_general_empty">暂无校车信息~</string>
+    <string name="school_bus_weeks">周内</string>
+    <string name="school_bus_over_weeks">周末</string>
+    <string name="school_bus_detail_address_title">乘车点：</string>
+    <string name="school_bus_detail_start_title">起点：</string>
+    <string name="school_bus_detail_end_title">终点：</string>
+    <string name="school_bus_detail_time_title">时间表：</string>
+</resources>

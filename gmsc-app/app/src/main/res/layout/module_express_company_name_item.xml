@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/express_company_name_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNormalBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp">
+
+    <cn.gmuni.sc.widget.CustomImageView
+        android:id="@+id/express_company_logo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_news" />
+
+    <TextView
+        android:id="@+id/express_company_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="韵达快递"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/fontColorPrimary"/>
+</LinearLayout>

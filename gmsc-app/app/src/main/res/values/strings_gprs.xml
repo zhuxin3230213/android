@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gprs_title">位置</string>
+    <string name="gprs_location_title">位置签到</string>
+    <string name="gprs_empty">暂无签到信息</string>
+</resources>

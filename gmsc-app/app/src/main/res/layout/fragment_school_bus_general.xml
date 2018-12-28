@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryBackground"
+        android:orientation="vertical">
+
+        <cn.gmuni.sc.widget.CustomEmptyDataView
+            android:id="@+id/school_bus_list_view_general_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:empty_image="@drawable/lost_empty_icon"
+            app:empty_text="@string/school_bus_general_empty"></cn.gmuni.sc.widget.CustomEmptyDataView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/school_bus_list_view_general_re"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/school_bus_weeks_rectangle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shap_more_rectangle" />
+
+                <TextView
+                    android:id="@+id/school_bus_weeks_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/school_bus_weeks_rectangle"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="@string/school_bus_weeks"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+
+                <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                    android:id="@+id/school_bus_list_view_general_weeks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/school_bus_weeks_rectangle"
+                    android:layout_marginTop="8dp"></cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+
+
+                <TextView
+                    android:id="@+id/school_bus_over_weeks_rectangle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/school_bus_list_view_general_weeks"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shap_more_rectangle" />
+
+                <TextView
+                    android:id="@+id/school_bus_over_weeks_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/school_bus_list_view_general_weeks"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/school_bus_over_weeks_rectangle"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="@string/school_bus_over_weeks"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+
+                <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                    android:id="@+id/school_bus_list_view_general_over_weeks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/school_bus_over_weeks_rectangle"
+                    android:layout_marginTop="8dp"></cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

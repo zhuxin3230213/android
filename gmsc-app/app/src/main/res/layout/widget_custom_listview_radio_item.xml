@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义前面文字，后面单选按钮的组件-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <RadioButton
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/fontColorPrimary"
+        android:id="@+id/radio_button"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:focusable="false"
+        android:button="@null"/>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNormalBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/semester_select_semester_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000028"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/semester_select_semester_container_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/semester_select_semester_img_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/semester_select_semester_img_one_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    app:layout_constraintBottom_toBottomOf="@id/semester_select_semester_img_one"
+                    app:layout_constraintRight_toRightOf="@id/semester_select_semester_img_one"
+                    android:src="@drawable/semester_select_choose"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/semester_select_semester_txt_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/fontColorPrimary"
+                android:text="秋季学期"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/semester_select_semester_container_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/semester_select_semester_img_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/semester_select_semester_img_two_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/semester_select_semester_img_two"
+                    app:layout_constraintRight_toRightOf="@id/semester_select_semester_img_two"
+                    android:src="@drawable/semester_select_choose"/>
+            </android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/semester_select_semester_txt_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/fontColorPrimary"
+                android:text="春季学期"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryBackground">
+
+    </View>
+</LinearLayout>

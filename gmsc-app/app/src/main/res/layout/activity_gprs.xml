@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.more.gprs.GprsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/gprs_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/gprs_title"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="loadingLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBackground"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/gprs_userInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/colorNormalBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/gprs_userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="齐德龙"
+                            android:textColor="@color/fontColorPrimary"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/gprs_calendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="2018.11.19"
+                            android:textColor="@color/fontColorPrimary"
+                            android:textSize="@dimen/font_normal" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/gprs_top_divider"
+                    style="@style/AppTheme.Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/gprs_userInfo"
+                    android:background="@color/colorPrimaryBackground" />
+
+                <LinearLayout
+                    android:id="@+id/gprs_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gprs_top_divider"
+                    android:background="@color/colorNormalBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="28dp"
+                    android:paddingTop="28dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/qiandao_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/qiandao_location" />
+
+                        <TextView
+                            android:id="@+id/gprs_location_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="20dp"
+                            android:text="@string/gprs_location_title"
+                            android:textColor="@color/fontColorWhite"
+                            android:textSize="@dimen/font_huge" />
+
+                        <TextView
+                            android:id="@+id/gprs_location_date_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="20dp"
+                            android:text="16:03:01"
+                            android:textColor="@color/gprs_location_date_time"
+                            android:textSize="@dimen/font_normal" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/gprs_bottom_divider"
+                    style="@style/AppTheme.Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/gprs_location"
+                    android:background="@color/colorPrimaryBackground" />
+
+                <TextView
+                    android:id="@+id/gprs_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/gprs_bottom_divider"
+                    android:background="@color/colorNormalBackground"
+                    android:gravity="center"
+                    android:text="@string/gprs_empty"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_minor"
+                    android:visibility="gone" />
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/gprs_bottom_divider">
+
+                    <LinearLayout
+                        android:id="@+id/gprs_location_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/gprs_bottom_divider"
+                        android:background="@color/pepper_red"
+                        android:orientation="horizontal">
+
+                        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                            android:id="@+id/gprs_location_list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorNormalBackground">
+
+                        </cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

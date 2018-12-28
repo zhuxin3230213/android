@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.schoolcard.SchoolCardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/school_card_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="校园卡"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="loadingLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/school_card_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNormalBackground"
+                android:orientation="vertical">
+                <!--校园卡上部布局容器-->
+                <LinearLayout
+                    android:id="@+id/school_card_card_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/school_card"
+                    android:orientation="vertical">
+                    <!--学校图标，名称，卡片类型容器-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <!--学校图标-->
+                        <cn.gmuni.sc.widget.CircleImageView
+                            android:id="@+id/school_card_school_logo"
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:layout_marginLeft="42dp"
+                            android:src="@drawable/img_school_02" />
+                        <!--学校名称英文名称布局-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/school_card_school_name_ch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="陕西服装工程学院"
+                                android:textColor="@color/fontColorWhite"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/school_card_school_name_en"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="shannxi institute of clothing engineering"
+                                android:textColor="@color/fontColorWhite"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                        <!--卡片类型-->
+                        <TextView
+                            android:id="@+id/school_card_card_type"
+                            android:layout_width="65dp"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/corners_bg15"
+                            android:gravity="center"
+                            android:text="本科生卡"
+                            android:textColor="#25a992"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <!--学生姓名卡号开卡按钮容器-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="42dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/school_card_stu_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="姓名：请开卡"
+                                android:textColor="@color/fontColorWhite"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/school_card_stu_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="学号：请开卡"
+                                android:textColor="@color/fontColorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/school_card_open_card"
+                            android:layout_width="100dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/corners_bg16"
+                            android:gravity="center"
+                            android:text="开通校园卡"
+                            android:textColor="@color/fontColorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--余额部分显示容器-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="余额（元）"
+                            android:textColor="@color/fontColorNormal"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/school_card_card_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="￥0元"
+                            android:textColor="@color/fontColorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <cn.gmuni.sc.widget.CustomButton
+                        android:id="@+id/school_card_pay"
+                        android:layout_width="70dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="充值"
+                        android:textColor="@color/fontColorWhite"
+                        android:textSize="16sp"
+                        app:radius="14dp"
+                        app:type="primary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/school_card_card_keep"
+                        android:layout_width="240dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/corners_bg12_yellow"
+                        android:gravity="center"
+                        android:text="请开卡"
+                        android:textColor="#bca069"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/school_card_pay_detail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorNormalBackground"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_chongzhi_01"
+                    android:drawablePadding="5dp"
+                    android:text="充值记录" />
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_jinru" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/school_card_consume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorNormalBackground"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_xiaofei"
+                    android:drawablePadding="5dp"
+                    android:text="消费记录" />
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_jinru" />
+            </LinearLayout>
+        </LinearLayout>
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
