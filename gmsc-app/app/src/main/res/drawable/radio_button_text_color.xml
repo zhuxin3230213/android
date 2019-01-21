@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--普通话水平测试选择证件是文字大小颜色同步处理-->
-    <item android:state_enabled="true" android:state_checked="true" android:color="@color/news_image_bg"/>
-    <item android:state_enabled="true" android:state_checked="false" android:color="@color/fontColorNormal"/>
-</selector>
