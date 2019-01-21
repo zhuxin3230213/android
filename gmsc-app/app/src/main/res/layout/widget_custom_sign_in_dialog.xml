@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/sign_in_dialog_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sign_in_top_hide"
+            android:gravity="right">
+
+            <cn.gmuni.sc.widget.CustomImageView
+                android:id="@+id/sign_in_dialog_one_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_close" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_dialog_one"
+            android:background="@drawable/shap_sign_in_dialog_tip">
+
+            <LinearLayout
+                android:id="@+id/sign_in_dialog_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:id="@+id/sign_in_dialog_two_sun"
+                    android:layout_width="210dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/image_top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_in_dialog_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_in_dialog_two"
+                android:layout_marginTop="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <cn.gmuni.sc.widget.CustomImageView
+                        android:id="@+id/sign_in_dialog_three_flower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flower" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/sign_in_dialog_three_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/sign_in_integral"
+                            android:textColor="@color/fontColorWhite"
+                            android:textSize="@dimen/font_large" />
+
+                        <TextView
+                            android:id="@+id/sign_in_dialog_three_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sign_in_dialog_three_title"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="+5"
+                            android:textColor="@color/fontColorWhite"
+                            android:textSize="@dimen/font_large" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_in_dialog_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_in_dialog_three"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sign_in_success"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_larger" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_in_dialog_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_in_dialog_four"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sign_in_tips"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pay_net_page_name">网络服务</string>
+    <string name="pay_net_account">账号</string>
+    <string name="pay_net_normal">正常</string>
+    <string name="pay_net_downtime">停机</string>
+    <string name="pay_net_used">已用流量</string>
+    <string name="pay_net_remaining">剩余流量：</string>
+    <string name="pay_net_account_remaining">账户余额</string>
+</resources>

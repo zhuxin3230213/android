@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="market_page_name">集市</string>
+    <string name="market_menu_all">全部</string>
+    <string name="market_menu_books">书籍</string>
+    <string name="market_menu_supplies">学习用品</string>
+    <string name="market_menu_daily">生活用品</string>
+    <string name="market_menu_3C">3C数码</string>
+    <string name="market_menu_other">其他</string>
+
+    <string name="market_list_view_all_empty">暂无物品信息出售~</string>
+    <string name="market_list_view_books_empty">暂无书籍信息出售~</string>
+    <string name="market_list_view_supplier_empty">暂无学习用品出售~</string>
+    <string name="market_list_view_daily_empty">暂无生活用品出售~</string>
+    <string name="market_list_view_3C_empty">暂无3C数码出售~</string>
+    <string name="market_list_view_other_empty">暂无其他物品出售~</string>
+    <string name="market_me_list_view_for_sale_empty">暂无待售商品信息~</string>
+    <string name="market_me_list_view_is_sale_empty">暂无已出售商品信息~</string>
+
+    <string name="market_oneself_detail">详情</string>
+    <string name="market_others_detail">详情</string>
+
+    <string name="market_desc">简介</string>
+    <string name="market_message">留言</string>
+    <string name="market_editor">编辑</string>
+    <string name="market_delete">删除</string>
+    <string name="market_remark_sale">标记已出售</string>
+    <string name="market_publish_title">发布集市</string>
+
+    <string name="market_publish_title_desc">一句话描述下宝贝（5-30字）（必填）</string>
+    <string name="market_publish_introduce">补充一下宝贝的来历、成色、亮点吧（5-300字）</string>
+    <string name="market_publish_pic_tip">上传照片有助于商品出售</string>
+    <string name="market_publish_price">输入售卖的价格</string>
+    <string name="market_message_tip">请输入留言信息</string>
+    <string name="market_others_detail_report">举报</string>
+    <string name="market_others_detail_report_cancle">取消</string>
+    <string name="market_report_reason">举报原因</string>
+    <string name="market_personal_attack">人身攻击</string>
+    <string name="market_pornographic">淫秽色情</string>
+    <string name="market_spam">垃圾广告</string>
+    <string name="market_sensitive_information">敏感信息</string>
+    <string name="market_sex_vice_violence_terror">黄赌毒暴恐</string>
+    <string name="market_political_harmful">政治有害</string>
+    <string name="market_others">其他</string>
+
+
+    <string name="me_publish_market">我的发布</string>
+    <string name="market_tab_nav_all">全部</string>
+    <string name="market_tab_nav_for_sale">待售</string>
+    <string name="market_tab_nav_is_sale">已出售</string>
+
+
+    <string name="market_message_empty">暂无留言信息哦~</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorNormalBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_title"
+        android:layout_centerVertical="true"
+        android:textColor="@color/fontColorPrimary"
+        android:layout_alignParentLeft="true" android:paddingLeft="10dp" android:textSize="@dimen/font_normal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_jinru"
+        android:textSize="@dimen/font_normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" android:paddingRight="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorPrimaryBackground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+            android:id="@+id/lost_found_list_view_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+        <cn.gmuni.sc.widget.CustomEmptyDataView
+            android:id="@+id/lost_found_list_view_found_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:empty_text="@string/lost_found_empty"
+            app:empty_image="@drawable/lost_empty_icon"></cn.gmuni.sc.widget.CustomEmptyDataView>
+    </LinearLayout>
+</LinearLayout>

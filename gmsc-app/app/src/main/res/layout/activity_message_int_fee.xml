@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.me.message.MessageIntFeeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/message_int_fee_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/message_detail"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="loadingLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNormalBackground">
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="26dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_int_fee_amount_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/message_int_fee_title"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/message_fee_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="70.00"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/school_card_money_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_int_fee_amount"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/AppTheme.Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_int_fee_divider"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_int_fee_type_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/message_int_fee_type"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/message_int_fee_type_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:text="支出"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_normal" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_int_fee_type"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_int_fee_time_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/message_int_fee_time"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/message_int_fee_time_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="18dp"
+                        android:text="2018-01-01 19:15:13"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_int_fee_time"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_int_fee_order_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/message_int_fee_order"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/message_int_fee_order_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="18dp"
+                        android:text="115631432132132132132132"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_int_fee_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_int_fee_order"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_int_fee_note_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/message_int_fee_note"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/message_int_fee_note_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="18dp"
+                        android:text="网络缴费"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

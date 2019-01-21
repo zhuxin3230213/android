@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/express_result_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorNormalBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <cn.gmuni.sc.widget.CustomImageView
+            android:id="@+id/express_result_logo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_news" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/express_result_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="韵达快递"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/express_result_exp_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="订单号: 3711770019447"
+                android:textColor="@color/fontColorNormal"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/express_result_divider"
+        style="@style/AppTheme.Divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <FrameLayout
+        android:id="@+id/express_result_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                android:id="@+id/express_result_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorNormalBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/express_result_copyright_left"
+                        android:layout_width="15dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="1dp"
+                        android:layout_toLeftOf="@+id/express_result_copyright"
+                        android:background="@drawable/express_result_copyright_divider" />
+
+                    <TextView
+                        android:id="@+id/express_result_copyright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:text="@string/express_result_copyright"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_smaller" />
+                    <TextView
+                        android:id="@+id/express_result_copyright_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:text="@string/express_result_copyright_one"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_smaller"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/express_result_copyright_right"
+                        android:layout_width="15dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/express_result_copyright"
+                        android:background="@drawable/express_result_copyright_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <cn.gmuni.sc.widget.CustomEmptyDataView
+        android:id="@+id/express_result_no_data_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:empty_image="@drawable/express_empty_icon"
+        app:empty_text="@string/express_result_no_data">
+
+    </cn.gmuni.sc.widget.CustomEmptyDataView>
+
+    <cn.gmuni.sc.widget.CustomEmptyDataView
+        android:id="@+id/express_result_error_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:empty_image="@drawable/express_empty_icon"
+        app:empty_text="@string/express_result_no_data">
+
+    </cn.gmuni.sc.widget.CustomEmptyDataView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lost_found_page_name">失物招领</string>
+    <string name="lost_found_all">全部</string>
+    <string name="lost_found_found">捡到</string>
+    <string name="lost_found_lost">丢失</string>
+    <string name="lost_found_publish_new">发布</string>
+    <string name="lost_found_publish_pageName">发布招领</string>
+    <string name="lost_found_publish_type">发布类型</string>
+    <string name="lost_found_publish_lost">#丢失</string>
+    <string name="lost_found_publish_found">#捡到</string>
+    <string name="lost_found_publish_name_hint">捡到（丢失）的是什么物品？（必填）</string>
+    <string name="lost_found_publish_address_hint">捡到（丢失）物品的地点（必填）</string>
+    <string name="lost_found_publish_time_hint">捡到（丢失）物品的大致时间（必填）</string>
+    <string name="lost_found_publish_pic_hint">上传照片有助于尽快找到失主哦~</string>
+    <string name="lost_found_publish_desc_hint">详细描述拾取物品的地点，时间，物品的类型将有助于更快的找到失主~（字数不超过200字）</string>
+    <string name="lost_found_finish">完成</string>
+    <string name="lost_found_delete">刪除</string>
+    <string name="lost_found_empty">还没有人发布失物招领呢~</string>
+    <string name="lost_found_empty_mine">您还没有发布失物招领呢~</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/scan_default_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/scan_default_tip"
+            android:textColor="@color/fontColorMinor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/scan_default_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scan_default_tip"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="少时诵诗书少时诵诗书少时诵诗书"
+            android:textColor="@color/news_image_bg"
+            android:textSize="@dimen/fab_margin" />
+
+        <TextView
+            android:id="@+id/scan_default_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scan_default_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/scan_default_copy_content"
+            android:textColor="@color/viewfinder_laser"
+            android:textSize="@dimen/fab_margin" />
+
+    </RelativeLayout>
+</LinearLayout>

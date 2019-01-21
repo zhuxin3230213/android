@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/report_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/report_personal_attack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/market_report_reason"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textSize="@dimen/font_huge" />
+
+                    <ImageView
+                        android:id="@+id/report_cancle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_close_000" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_personal_attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_personal_attack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_personal_attack"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_pornographic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_pornographic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_pornographic"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_spam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_spam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_spam"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_sensitive_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_sensitive_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_sensitive_information"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_sex_vice_violence_terror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_sex_vice_violence_terror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_sex_vice_violence_terror"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_political_harmful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_political_harmful"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_political_harmful"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+
+            <LinearLayout
+                android:id="@+id/market_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/report_market_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_others"
+                    android:textColor="@color/fontColorPrimary"
+                    android:textSize="@dimen/font_large" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

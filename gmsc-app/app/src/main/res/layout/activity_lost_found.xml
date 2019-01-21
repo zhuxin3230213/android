@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.lost.LostFoundActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/lost_found_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:action_icon="@drawable/icon_mine"
+            app:title="@string/lost_found_page_name"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:tag="loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorNormalBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lost_found_tab_nav"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+                        android:text="@string/lost_found_all"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColorGeneric"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_all_underline"
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:background="@color/colorGradientEnd"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_found"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+                        android:text="@string/lost_found_found"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_found_underline"
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:background="@color/colorGradientEnd"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_lost"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+                        android:text="@string/lost_found_lost"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColorMinor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lost_found_tab_nav_lost_underline"
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:background="@color/colorGradientEnd"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/lost_found_content_fram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lost_found_tab_nav"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <cn.gmuni.sc.widget.CustomButton
+                    android:id="@+id/lost_found_publish_new"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/icon_release"
+                    android:text="@string/lost_found_publish_new"
+                    android:textColor="@color/fontColorWhite"
+                    app:custom_padding_left="50dp"
+                    app:custom_padding_right="50dp"
+                    app:radius="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

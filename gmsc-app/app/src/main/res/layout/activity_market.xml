@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".module.more.market.MarketActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:elevation="0dp">
+
+        <cn.gmuni.sc.widget.CustomToolbar
+            android:id="@+id/market_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/market_page_name"></cn.gmuni.sc.widget.CustomToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.gmuni.sc.widget.CustomConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="loadingLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_linearLayoutMenu"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_gradient"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/market_tab_content_fram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/scroll_linearLayoutMenu"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <cn.gmuni.sc.widget.CustomButton
+                    android:id="@+id/market_publish_new"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/icon_release"
+                    android:text="@string/lost_found_publish_new"
+                    android:textColor="@color/fontColorWhite"
+                    app:custom_padding_left="50dp"
+                    app:custom_padding_right="50dp"
+                    app:radius="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </cn.gmuni.sc.widget.CustomConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

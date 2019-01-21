@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indexBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/express_company_include_top"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/express_company_rounded_edittext">
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:id="@+id/express_company_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_search" />
+
+                <EditText
+                    android:id="@+id/express_company_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/express_company_rounded_edittext"
+                    android:hint="@string/express_company_search"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/fontColorMinor"
+                    android:textColorHint="@color/fontColorMinor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_small" />
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:id="@+id/express_company_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_close_000"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+            android:id="@+id/express_company_search_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/express_company_include_top"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/express_company_center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/express_company_include_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <cn.gmuni.sc.widget.CustomImageView
+                    android:id="@+id/express_company_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_heart" />
+
+                <TextView
+                    android:id="@+id/express_company_common_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/express_company_heart"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/express_company_heart"
+                    android:singleLine="true"
+                    android:text="@string/express_company_common_use"
+                    android:textColor="@color/fontColorMinor"
+                    android:textSize="@dimen/font_smaller" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/express_company_include_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/express_company_center">
+
+            <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+                android:id="@+id/express_company"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <cn.gmuni.sc.widget.IndexBar
+                android:id="@+id/express_company_index"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                indexBar:indexTextColor="@color/express_other_company_color"
+                indexBar:indexTextSize="@dimen/font_tiny" />
+
+            <TextView
+                android:id="@+id/express_company_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/fontColorButtonSelect"
+                android:textSize="36sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

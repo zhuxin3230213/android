@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/market_publish_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+            <cn.gmuni.sc.widget.ContainsEmojiEditText
+                android:id="@+id/market_publish_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:hint="@string/market_publish_title_desc"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_publish_introduce_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/market_publish_title_layout"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+            <cn.gmuni.sc.widget.ContainsEmojiEditText
+                android:id="@+id/market_publish_introduce_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:hint="@string/market_publish_introduce"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_publish_pic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_publish_introduce_layout"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/market_publish_pic_img"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/icon_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/market_publish_pic_tip"
+                android:textColor="@color/fontColorMinor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_publish_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_publish_pic_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_publish_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_publish_div"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格（元）"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+            <cn.gmuni.sc.widget.ContainsEmojiEditText
+                android:id="@+id/market_publish_price_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="20dp"
+                android:gravity="right"
+                android:hint="@string/market_publish_price"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_publish_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_publish_price_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/AppTheme.Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_publish_divider"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类别"
+                android:textColor="@color/fontColorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+            <LinearLayout
+                android:id="@+id/radioGroup_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_books"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/market_menu_books" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_supplier"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/market_menu_supplies" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_daily"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/market_menu_daily" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_3c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/market_menu_3C" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/market_menu_other" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

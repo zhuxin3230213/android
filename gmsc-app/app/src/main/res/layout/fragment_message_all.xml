@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryBackground"
+        android:orientation="vertical">
+
+        <cn.gmuni.sc.widget.CustomEmptyDataView
+            android:id="@+id/message_list_view_all_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:empty_image="@drawable/lost_empty_icon"
+            app:empty_text="@string/message_list_view_all_empty"></cn.gmuni.sc.widget.CustomEmptyDataView>
+
+        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+            android:id="@+id/message_list_view_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView>
+
+
+    </LinearLayout>
+</LinearLayout>

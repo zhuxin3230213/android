@@ -1,0 +1,10 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--设置颜色-->
+    <solid
+        android:color="@color/notice_circular_round" />
+    <!--设置宽高 -->
+    <size android:width="9dp"
+        android:height="9dp" />
+</shape>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/market_tab_nav"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_gradient"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_all"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_all"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_huge" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_all_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_books"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_books"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_books_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_supplier"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_supplies"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_supplier_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_daily"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_daily"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_daily_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_3C"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_3C"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_3C_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/market_tab_nav_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="@string/market_menu_other"
+                android:textAlignment="center"
+                android:textColor="@color/fontColorWhite"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/market_tab_nav_other_underline"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@color/fontColorWhite"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

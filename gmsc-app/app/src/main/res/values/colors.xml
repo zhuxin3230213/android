@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--系统主背景色-->
+    <!--主背景色-->
+    <color name="colorPrimaryBackground">#f2f0f7</color>
+
+    <!--白色背景-->
+    <color name="colorNormalBackground">#ffffff</color>
+    <color name="colorYellowBackground">#fff001</color>
+    <!--系统渐变背景色-->
+    <color name="colorGradientStart">#45d7b7</color>
+    <color name="colorGradientEnd">#27d0ae</color>
+
+    <!--系统字体主色调-->
+    <color name="fontColorPrimary">#333333</color>
+    <color name="fontColorNormal">#666666</color>
+    <color name="fontColorMinor">#999999</color>
+    <color name="fontColorMinistrant">#bfbfbf</color>
+    <color name="fontColorWhite">#ffffff</color>
+    <color name="fontColorGeneric">#28d0ae</color>
+    <color name="fontColorButtonSelect">#27d1af</color>
+
+    <!--主页定位学校卡片-->
+    <color name="home_school_card">#2409b08e</color>
+    <!--底部栏菜单选中与未选中样式-->
+    <color name="nav_tab_checked">#2ad1af</color>
+    <color name="nav_tab_unchecked">#999999</color>
+    <!--新闻模块图片背景与轮廓-->
+    <color name="news_image_bg">#000000</color>
+    <color name="news_image_border">#c9c9c9</color>
+    <!--新闻模块下拉刷新进度条渐变色-->
+    <color name="common_progressbar_startColor">#FFFFFF</color>
+    <color name="common_progressbar_centerColor">#FF6666</color>
+    <color name="common_progressbar_endColor">#FF0000</color>
+    <!--通知圆形图片背景-->
+    <color name="notice_circular_round">#e30909</color>
+    <!--成绩查询分割线-->
+    <color name="score_divider_line">#e2e2e2</color>
+    <color name="score_custom_edit">#d6d6d7</color>
+    <!--课表颜色数组具体值-->
+    <color name="dark_green">#2db572</color>
+    <color name="light_green">#28d0ae</color>
+    <color name="orange_yellow">#feb712</color>
+    <color name="sky_blue">#36c2f0</color>
+    <color name="pepper_red">#f03f36</color>
+    <color name="light_gray">#cccdcf</color>
+
+    <color name="semester_unselect">#c4c4c4</color>
+
+    <!--分割线-->
+    <color name="divided_line">#f2f2f2</color>
+    <!--选择课表弹窗口底色-->
+    <color name="college_dialog_bg">#7f000000</color>
+
+    <!--快递查询公司logo填充色-->
+    <color name="express_company_logo_bg">#4b3478</color>
+    <!--选择其他快递公司字体颜色-->
+    <color name="express_other_company_color">#0d2e6b</color>
+    <!--快递扫码模块-->
+    <color name="translucent_70p">#B3000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">@color/colorPrimary</color>
+    <color name="viewfinder_laser">#FF03A9F4</color>
+    <color name="viewfinder_laser_transparent">#0003A9F4</color>
+    <!--签到模块-->
+    <color name="sign_in_itegral_count">#ffed52</color>
+    <color name="sign_in_top_bg">#33FFFFFF</color>
+    <color name="sign_in">#5d3200</color>
+    <color name="sign_in_hide">#e6e6e6</color>
+    <color name="sign_in_top_hide">#00FFFFFF</color>
+    <!--消息-->
+    <color name="message_underline_bg">#ffbf29</color>
+    <!--位置定位-->
+    <color name="gprs_location_date_time">#b5ffef</color>
+    <color name="gprs_circular_round_bg">#adadad</color>
+    <!--校车查询-->
+    <color name="school_bus_query">#36d3b2</color>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/express_query_top"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_chaxun">
+
+            <LinearLayout
+                android:id="@+id/express_query_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/express_include_query_post_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/express_query_post"
+                    android:textColor="@color/fontColorWhite"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@+id/express_query_post"
+                android:layout_marginTop="14dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@drawable/express_query_rounded_edittext">
+
+                    <EditText
+                        android:id="@+id/express_query_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/express_query_rounded_edittext"
+                        android:hint="@string/express_query_edit"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/fontColorPrimary"
+                        android:textColorHint="@color/fontColorMinor"
+                        android:textSize="@dimen/font_large" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/express_query_scan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_scan" />
+
+                        <ImageView
+                            android:id="@+id/express_query_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_close_000"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/express_query_divider"
+            style="@style/AppTheme.Divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/express_query_top" />
+
+        <TextView
+            android:id="@+id/express_history_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/express_query_divider"
+            android:background="@color/colorNormalBackground"
+            android:gravity="center"
+            android:text="@string/express_query_history_title"
+            android:textColor="@color/fontColorPrimary"
+            android:textSize="@dimen/font_normal"
+            android:visibility="gone" />
+
+        <cn.gmuni.sc.widget.CustomEmptyDataView
+            android:id="@+id/express_history_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/express_query_divider"
+            app:empty_image="@drawable/icon_404"
+            app:empty_text="@string/express_query_no_history">
+
+        </cn.gmuni.sc.widget.CustomEmptyDataView>
+
+        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+            android:id="@+id/express_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/express_history_title"
+            android:visibility="gone" />
+
+        <cn.gmuni.sc.widget.recyclerview.CustomRefreshRecycleView
+            android:id="@+id/express_query_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/express_query_divider"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/express_query_choose_other_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/express_query_company"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/express_query_choose_other_company"
+            android:textColor="@color/express_other_company_color"
+            android:textSize="@dimen/font_small"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_notice_item_listview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNormalBackground">
+
+    <cn.gmuni.sc.widget.CustomImageView
+        android:id="@+id/notice_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_notice" />
+
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notice_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/notice_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="开学通知"
+        android:textColor="@color/fontColorPrimary"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/notice_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:singleLine="true"
+        android:text="2015-05-04"
+        android:textColor="@color/fontColorMinistrant"
+        android:textSize="@dimen/font_smaller" />
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/notice_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="49dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="新学期，新气象，又是一年一度的开学季新学期,又是一年一度的开学季"
+        android:textColor="@color/fontColorMinor"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/notice_circular_round"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/notice_circular_round" />
+
+
+</RelativeLayout>
